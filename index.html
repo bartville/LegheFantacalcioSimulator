@@ -21,7 +21,7 @@
 					<p>by Robocup</p>
 				</header>
 				<footer>
-					<a href="#banner" class="button style2 scrolly-middle">Rosica</a>
+					<a id="rosica" href="#banner" class="button style2 scrolly-middle">Rosica</a>
 				</footer>
 			</section>
 
@@ -30,9 +30,16 @@
 				<header>
 					<h2>This is Rosicamento</h2>
 				</header>
-				<p>todo</p>
+				<p id="rosicamento-results"></p>
 			</section>
 
+			<script>
+				document.getElementById("rosica").addEventListener("click", myFunction);
+
+				function myFunction() {
+				  document.getElementById("rosicamento-results").innerHTML = "La Fessa di Mammeta";
+				}
+			</script>
 
 
 		<!-- Generic -->
